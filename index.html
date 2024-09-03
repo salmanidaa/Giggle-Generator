@@ -12,7 +12,8 @@
     <!-- <div class="flex items-center min-h-screen"> -->
     <div class="max-w-lg border border-slate-200 rounded-lg mx-auto shadow-md p-5 mt-5 bg-slate-50">
         <form action="" id="jokeForm" class="">
-        <label class="font-medium mb-2" for="category">Select Category: </label>
+        <div class="mb-2">
+        <label class="font-medium mb-5" for="category">Select Category: </label>
         <select class="border-solid border-2 border-purple-500 mx-auto" id="category" name="category">
             <option value="Any">Any</option>
             <option value="Programming">Programming</option>
@@ -22,16 +23,24 @@
             <option value="Spooky">Spooky</option>
             <option value="Christmast">Christmast</option>
         </select>
+        </div>
 
-        <br><br>
-
-        <label class="font-medium" for="type">Type: </label>
+        <div class="mb-2">
+        <label class="font-medium" for="type">Type: </label> <br>
         <input type="radio" id="single" name="type" value="single" checked>
-        <label for="single">Single</label>
+        <label for="single">Single</label> <br>
         <input type="radio" id="twopart" name="type" value="twopart">
-        <label for="twopart">Two Part</label> 
+        <label for="twopart">Two Part</label>
+        </div>
 
-        <br><br>
+        <div class="mb-5">
+        <label class="font-medium" for="mode">Safe mode? </label> <br>
+        <input type="radio" id="yes" name="mode" value="yes" checked>
+        <label for="yes">Yes</label> <br>
+        <input type="radio" id="no" name="mode" value="no">
+        <label for="no">No</label>
+        </div>
+
         <div class="flex flex-col items-center">
         <button type="submit" class="text-sm text-center border-solid border-2 bg-purple-500 pt-2 pb-2 pl-3 pr-3 font-medium text-white rounded-md">Get the Joke!</button>
     </div>
@@ -40,7 +49,6 @@
 
     <br>
     <div class="max-w-lg bg-purple-100 border border-slate-200 rounded-lg mx-auto shadow-md p-5 m-2">
-        <p class="font-bold text-xl mb-2">Here's the Joke:</p>
         <p id="theJoke"> Fill the form and click the button submit to get the joke!</p>
     </div>
     <script src="joke.js"></script>

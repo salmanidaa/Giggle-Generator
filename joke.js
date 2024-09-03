@@ -2,13 +2,12 @@ document.getElementById('jokeForm').addEventListener('submit', function(event){
     event.preventDefault();
 
     const category = document.getElementById('category').value;
+    const types = document.querySelector('input[name="type"]:checked').value;
+    const mode = document.querySelector('input[name="mode"]:checked').value;
+    let URL = `https://v2.jokeapi.dev/joke/${category}?type=${types}`;
 
-    let type = document.querySelectorAll('input[name="type"]:checked');
-
-    let URL = `https://v2.jokeapi.dev/joke/${category}`;
-    
-    if (type){
-        URL += `?type=${type.value}`;
+    if (mode==="yes"){
+        URL += `&safe-mode`;
     }
 
     fetch (URL)
@@ -20,7 +19,7 @@ document.getElementById('jokeForm').addEventListener('submit', function(event){
         } else if(data.type==='twopart'){
             theJoke.innerHTML= `Q: ${data.setup} <br> A: ${data.delivery}`;
         } else {
-            theJoke.textContent = 'No Joke Found!';
+            theJoke.textContent = 'Sorry, No Joke Found!';
         }
     })
 

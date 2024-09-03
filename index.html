@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Giggle Generator</title>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+<body class="bg-gray-100">
+    <p class="text-center text-3xl font-bold m-5 mt-10">Giggle Generator</p>
+    <!-- <div class="flex items-center min-h-screen"> -->
     <div class="max-w-lg border border-slate-200 rounded-lg mx-auto shadow-md p-5 mt-5 bg-slate-50">
-        <p class="text-center text-xl font-bold mb-5">Fun Joke Generator</p>
         <form action="" id="jokeForm" class="">
         <label class="font-medium mb-2" for="category">Select Category: </label>
         <select class="border-solid border-2 border-purple-500 mx-auto" id="category" name="category">
@@ -34,11 +36,14 @@
         <button type="submit" class="text-sm text-center border-solid border-2 bg-purple-500 pt-2 pb-2 pl-3 pr-3 font-medium text-white rounded-md">Get the Joke!</button>
     </div>
     </form>
-    
+        </div>
+
     <br>
-    <p class="font-medium">Here's the Joke:</p>
-    <p id="theJoke"> Fill the form and click the button submit to get the joke!</p>
+    <div class="max-w-lg bg-purple-100 border border-slate-200 rounded-lg mx-auto shadow-md p-5 m-2">
+        <p class="font-bold text-xl mb-2">Here's the Joke:</p>
+        <p id="theJoke"> Fill the form and click the button submit to get the joke!</p>
     </div>
     <script src="joke.js"></script>
+</div>
 </body>
 </html>

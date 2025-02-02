@@ -1,5 +1,5 @@
 <h1>Giggle Generator</h1>
-Halo gais! Selamat pagi, siang, atau malam dimanapun kalian berada ✨ <br>
+Hola ✨ <br>
 <a href="https://giggle-generator.vercel.app/">Giggle Generator</a> adalah generator sederhana berisikan form untuk men-generate jokes sesuai dengan category, type, serta mode yang dipilih untuk membuatmu 'giggling' 😝.
 <br> <br>
 
